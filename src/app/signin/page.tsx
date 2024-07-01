@@ -1,6 +1,5 @@
 'use client'
-// import Navbar from '@/components/Navbar/Navbar'
-import React from 'react'
+import React from 'react';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { useState } from 'react'
@@ -25,7 +24,7 @@ import {
     FormMessage,
   } from "@/components/ui/form"
   import { Input } from "@/components/ui/input"
-import { toast, useToast } from "@/components/ui/use-toast"
+// import { toast, useToast } from "@/components/ui/use-toast"
 
 const page = () => {
       const [loader,setloader]=useState<boolean>(false);
@@ -74,8 +73,6 @@ const page = () => {
       const food: [string, number, number][] = [
         ["https://media.hackerearth.com/blog/wp-content/uploads/2019/09/Capture_HAckathon_wordpress.jpg", 340, 10],
       ];
-    //   const url=process.env.NEXT_PUBLIC_URL;
-    
     async function onsubmit(values: z.infer<typeof Sighupschema>){
       setloader(true)
         try{
