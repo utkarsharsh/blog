@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Input } from '../ui/input'
-import { toast } from '../ui/use-toast'
+import { Input } from './ui/input'
+import { toast } from './ui/use-toast'
 import axios from "axios"
 const Blog = ({username,profile,text,image,comment,id}:{username:string,profile:string,text:string,image:string,comment:any[],id:string}) => {
         

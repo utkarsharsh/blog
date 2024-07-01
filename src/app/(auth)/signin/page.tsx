@@ -1,4 +1,5 @@
 'use client'
+
 import React from 'react';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -7,7 +8,6 @@ import { boolean, z } from 'zod'
 import { Sighupschema } from '@/schemas/user'
 import { Button } from '@/components/ui/button'
 import { motion, Variants } from "framer-motion";
-import axios from 'axios'
 import { signIn } from 'next-auth/react'
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Navbar from '@/components/navbar/Navbar'

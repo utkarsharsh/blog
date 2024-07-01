@@ -6,9 +6,9 @@ import { Loader2 } from "lucide-react"
 import { useSession } from "next-auth/react"
 import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
-import Blog from '../blogs/Blog'
+import Blog from './Blog'
  import axios from 'axios'
-import { toast } from '../ui/use-toast'
+import { toast } from './ui/use-toast'
 const Main = () => {
     const [text,settext]= useState<string>();
     const [loader,setloader]=useState<boolean>(false);
