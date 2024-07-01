@@ -94,8 +94,8 @@ const Main = () => {
              <Input id="picture" type="file" onChange={handleurlchange} />
             </div>
             <div>
-               {total?.map((e:any)=>{
-             return  <Blog username={e?.username} profile={e?.profile} image={e?.image} comment={e?.comment} text={e?.text} id={e?._id}/>
+               {total?.map((e:any,index:any)=>{
+             return  <Blog username={e?.username} profile={e?.profile} image={e?.image} comment={e?.comment} text={e?.text} id={e?._id} key={index}/>
                })}
            
             </div>

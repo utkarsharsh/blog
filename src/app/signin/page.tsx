@@ -92,8 +92,7 @@ const page = () => {
         resolver: zodResolver(Sighupschema),
         defaultValues:{
             username:"",
-            password:"",
-           
+            password:"", 
         }
       },);
 
