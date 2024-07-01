@@ -26,7 +26,7 @@ import {
   import { Input } from "@/components/ui/input"
 // import { toast, useToast } from "@/components/ui/use-toast"
 
-const page = () => {
+const Page = () => {
       const [loader,setloader]=useState<boolean>(false);
     interface Props {
         emoji: string;
@@ -171,4 +171,4 @@ loader ? <>
   )
 }
 
-export default page
+export default Page
