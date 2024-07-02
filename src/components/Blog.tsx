@@ -17,8 +17,8 @@ const Blog = ({username,profile,text,image,comment,id}:{username:string,profile:
           });
           return
           }
-          console.log(url+"updatecomment");
-          const {data}= await axios.post(url+"updatecomment",{
+          console.log(url+"/updatecomment");
+          const {data}= await axios.post(url+"/updatecomment",{
             id,commentText
           });
           if(data.status){

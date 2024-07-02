@@ -89,8 +89,8 @@ const Page = () => {
         let newvalue={...values,profile:img}
     
 
-    const {data}=  await axios.post(url+"signup",newvalue);
-console.log(url + "signup"); 
+    const {data}=  await axios.post(url+"/signup",newvalue);
+console.log(url + "/signup"); 
     if(data.status){
         router.push("/signin");
         toast({
