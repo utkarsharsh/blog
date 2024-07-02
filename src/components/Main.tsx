@@ -29,6 +29,7 @@ const Main = () => {
          toast({
             description:"Your post have been evaluated"
          })
+         handledata();
          setloader(false)
          settext("");
       }
