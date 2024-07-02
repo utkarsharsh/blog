@@ -90,7 +90,7 @@ const Page = () => {
     
 
     const {data}=  await axios.post(url+"signup",newvalue);
-    
+console.log(url + "signup"); 
     if(data.status){
         router.push("/signin");
         toast({

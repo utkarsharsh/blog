@@ -24,7 +24,7 @@ const Main = () => {
          return;
       }
       setloader(true);
-      const {data}=await axios.post(url+"/postablog",{text,image});
+      const {data}=await axios.post(url+"postablog",{text,image});
       if(data.status){
          toast({
             description:"Your post have been evaluated"
@@ -54,7 +54,7 @@ const Main = () => {
       setimage(data.url);
     }
     async function handledata(){
-      const {data}=await axios.get(url+"/postablog");
+      const {data}=await axios.get(url+"postablog");
       if(data.status){
       settotalpost(data.post)
        }
